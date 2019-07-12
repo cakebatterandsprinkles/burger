@@ -1,8 +1,10 @@
 <li>
+	<span class="fa-li"><i class="fas fa-hamburger"></i></span>
 	{{this.burger_name}}
-	<button class="change-condition" data-id="{{this.id}}" data-devoured="{{this.devoured}}">
+	<br/>
+	<button class="change-condition btn btn-primary" data-id="{{this.id}}" data-devoured="{{this.devoured}}">
 		{{#if this.devoured}} Or is it? {{else}} Devoured! {{/if}}
 	</button>
 
-	<button class="delete-burger" data-id="{{this.id}}"> DELETE! </button>
+	<button class="delete-burger btn btn-danger" data-id="{{this.id}}"><i class="fas fa-trash-alt"></i> DELETE! </button>
 </li>
